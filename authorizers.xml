@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<authorizers>
-    <userGroupProvider>
-        <identifier>single-user-provider</identifier>
-        <class>org.apache.nifi.authorization.SingleUserAuthorizer</class>
-        <property name="Default User Identity">admin</property>
-    </userGroupProvider>
-</authorizers>
