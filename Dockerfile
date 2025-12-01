@@ -13,3 +13,4 @@ USER nifi
 COPY nifi.properties /opt/nifi/nifi-current/conf/
 
 CMD ["bin/nifi.sh", "run"]
+
