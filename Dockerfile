@@ -9,9 +9,7 @@ RUN apt-get update && apt-get install -y wget && \
 
 USER nifi
 
-# Copie des fichiers de configuration dans le dossier officiel
+# Copier le fichier nifi.properties
 COPY nifi.properties /opt/nifi/nifi-current/conf/nifi.properties
-COPY authorizers.xml /opt/nifi/nifi-current/conf/authorizers.xml
 
-# Commande pour lancer NiFi
 CMD ["bin/nifi.sh", "run"]
